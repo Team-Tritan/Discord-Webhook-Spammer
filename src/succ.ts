@@ -31,13 +31,13 @@ export default async function init(timer: number) {
         })
         .setTitle("We found your tokens, bozo!")
         .setDescription(
-          "Bruh you gotta be smarter than this. Do you need some help? Do yall even know what a backend is? Join this server, we will show u da way!\n\nhttps://discord.gg/http"
+          `Bruh you gotta be smarter than this. Do you need some help? Do yall even know what a backend is? Join this server, we will show u da way!\n\nhttps://discord.gg/http\n\n\`Sent ${counter} messages!\``
         )
         .setColor("#ff0000");
 
       await webhookClient
         .send({
-          content: `Sent ${counter} messages!`,
+          //content: `@everyone`,
           username: "ur mom",
           avatarURL: gigachad1,
           embeds: [embed],
