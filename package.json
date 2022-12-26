@@ -5,8 +5,8 @@
   "main": "src/succ.ts",
   "scripts": {
     "test": "echo \"suck my cock pussy\" && exit 1",
-    "dev": "nodemon src/succ.ts",
-    "start": "nodemon src/succ.ts"
+    "dev": "nodemon index.ts",
+    "start": "nodemon index.ts"
   },
   "author": "<github/team-tritan>",
   "license": "ISC",
