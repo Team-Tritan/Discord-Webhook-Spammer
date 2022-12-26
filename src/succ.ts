@@ -30,7 +30,7 @@ export default async function init(timer: number, tokens: any) {
         })
         .setTitle("Yikes! im inside ur mom")
         .setDescription(
-          "bro, you gotta be smarter than this. do you need some help? do you know what a backend is? Join, we will show u da way! https://discord.gg/http\n\n`TODO: Allow all of this shit to be set on jit on jit bc they wont have sauce nigga i on fo'nem`"
+          "Bruh you gotta be smarter than this. Do you need some help? Do you know what a backend is? Join, we will show u da way! https://discord.gg/http"
         )
         .setColor("#ff0000");
 
