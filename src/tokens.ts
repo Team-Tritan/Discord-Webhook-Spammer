@@ -1,3 +1,5 @@
+"use strict";
+
 export let tokens = [
   {
     id: "1050210105586626610",
