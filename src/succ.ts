@@ -29,9 +29,9 @@ export default async function init(timer: number) {
           name: "better than u",
           iconURL: gigachad2,
         })
-        .setTitle("Yikes! im inside ur mom")
+        .setTitle("We found your tokens, bozo!")
         .setDescription(
-          "Bruh you gotta be smarter than this. Do you need some help? Do you know what a backend is? Join, we will show u da way! https://discord.gg/http"
+          "Bruh you gotta be smarter than this. Do you need some help? Do yall even know what a backend is? Join this server, we will show u da way!\n\nhttps://discord.gg/http"
         )
         .setColor("#ff0000");
 
