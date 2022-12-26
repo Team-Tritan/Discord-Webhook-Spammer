@@ -1,14 +1,17 @@
 {
   "name": "lel",
   "version": "1.0.0",
-  "description": "",
-  "main": "succ.js",
+  "description": "anally fucking u daily<33",
+  "main": "src/succ.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"suck my cock pussy\" && exit 1",
+    "dev": "nodemon src/succ.ts",
+    "start": "nodemon src/succ.ts"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^14.7.1"
+    "discord.js": "^14.7.1",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4"
   }
 }
