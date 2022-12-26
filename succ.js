@@ -1,5 +1,7 @@
 const discord = require("discord.js");
 
+console.log("[Webhook Succ] ==> Getting ready to do the fucky!");
+
 let webhooks = [
   {
     id: "1050210105586626610",
@@ -20,7 +22,8 @@ let webhooks = [
 
 // TODO: Allow all of this shit to be set on jit on jit bc they wont have sauce nigga i on fo'nem
 webhooks.forEach(async (i) => {
-  setInterval(() => {
+  setInterval(async () => {
+    console.log("[Webhook Succ] ==> Created webhook client");
     let webhookClient = new discord.WebhookClient({ id: i.id, token: i.token });
 
     let embed = new discord.EmbedBuilder()
@@ -30,14 +33,15 @@ webhooks.forEach(async (i) => {
       )
       .setColor("#ff0000");
 
-    webhookClient.send({
+    await webhookClient.send({
       content: "backend???",
       username: "ur mom",
       avatarURL:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fmelmagazine.com%2Fwp-content%2Fuploads%2F2021%2F01%2FGigachad.jpg&f=1&nofb=1&ipt=a2f36fe31703152ccaa5d1be79c603c7113453661abb8b13dcf5ef5b9a8f6860&ipo=images",
       embeds: [embed],
+      content: "@everyone",
     });
 
-    console.log(`Sent to ${i.id}`);
+    console.log(`[Webhook Succ] ==> Sent shit to ${i.id}`);
   }, 10000);
 });
