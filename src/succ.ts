@@ -1,6 +1,7 @@
 "use strict";
 
 import { EmbedBuilder, WebhookClient } from "discord.js";
+import { tokens } from "./tokens";
 
 let counter: number = 0;
 let gigachad1: string =
@@ -8,7 +9,7 @@ let gigachad1: string =
 let gigachad2: string =
   "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi0.kym-cdn.com%2Fphotos%2Fimages%2Foriginal%2F001%2F370%2F940%2F66f.jpg&f=1&nofb=1&ipt=23da9fc4d9b75fac38d794f6f6b84381c645275fc6969217ab99b310cc7c38f3&ipo=images";
 
-export default async function init(timer: number, tokens: any) {
+export default async function init(timer: number) {
   console.log("[Webhook Succ] ==> Getting ready to do the fucky!");
 
   tokens.forEach(async (i: any) => {
@@ -26,7 +27,7 @@ export default async function init(timer: number, tokens: any) {
       let embed = new EmbedBuilder()
         .setAuthor({
           name: "better than u",
-          iconURL: gigachad2 as string,
+          iconURL: gigachad2,
         })
         .setTitle("Yikes! im inside ur mom")
         .setDescription(
@@ -38,7 +39,7 @@ export default async function init(timer: number, tokens: any) {
         .send({
           content: `Sent ${counter} messages!`,
           username: "ur mom",
-          avatarURL: gigachad1 as string,
+          avatarURL: gigachad1,
           embeds: [embed],
         })
         .catch((e) => {
