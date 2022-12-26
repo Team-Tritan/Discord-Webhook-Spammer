@@ -1,6 +1,6 @@
 "use strict";
 
-import discord from "discord.js";
+import { EmbedBuilder, WebhookClient } from "discord.js";
 
 async function init(time: number) {
   let counter: number = 0;
@@ -42,12 +42,12 @@ async function init(time: number) {
       console.log("[Webhook Succ] ==> Created webhook client");
       counter++;
 
-      let webhookClient = new discord.WebhookClient({
+      let webhookClient = new WebhookClient({
         id: i.id,
         token: i.token,
       });
 
-      let embed = new discord.EmbedBuilder()
+      let embed = new EmbedBuilder()
         .setAuthor({
           name: "better than u",
           iconURL: gigachad2 as string,
